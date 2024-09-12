@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+h1{
+	text-align: center;
+}
+
+.msgArea{
+	text-align: center;
+}
+
+.onlyCenter{
+	text-align: center;
+}
+.main {
+	display: flex;
+	justify-content:center;
+	grid-template-columns: 1fr;
+}
+.mainLeft {
+	grid-column: 1/2;
+	padding: 10px;
+}
+.mainRight {
+	grid-column: 1/2;
+	padding: 10px;
+}
+
+.table {
+	max-height: 450px;
+	direction: rtl;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+	background-color: aqua;
+    margin-top: auto;
+	text-align: center;
+}
