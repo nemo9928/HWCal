@@ -19,10 +19,10 @@
 			<input type="submit" name="btn" value="検索する" formaction="/HWCal/search">
 		</form>
 		<div class="table">
-			<form action="?" method="post">
 			<% for (int i = 0; i < dto.size(); i++) {
 					EPBean bean = dto.get(i);
 			%>
+			<form action="?" method="post">
 					<p>企業名: <%=bean.getName()%></p>
 					<p>月収: <%=bean.getmWage()%></p>
 					<input type="hidden" name ="mWage" value="<%= bean.getmWage()%>">
@@ -31,9 +31,9 @@
 					<p>ボーナス: <%=bean.getBonus()%></p>
 					<input type="hidden" name ="bonus" value="<%= bean.getBonus()%>">
 					<input type="submit" value="読み込み" formaction="/HWCal/return"><br>
+			</form>
 					-------------------------
 			<% } %>
-			</form>
 		</div>
 		<a href="./index.jsp">タイトルへ</a>
 	</div>
